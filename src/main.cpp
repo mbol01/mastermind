@@ -329,8 +329,10 @@ void loop(void) {
             display.println(F("Press Y"));
             display.print(F("G:"));
             display.println(result[0]);
+            if(gameMode!=2){
             display.print(F("Y:"));
             display.println(result[1]);
+            }
             display.print(F("R:"));
             display.println(result[2]);
             display.display();
